@@ -7,8 +7,10 @@ import com.huzaifa.healthcare.system.repo.DoctorRepo;
 import com.huzaifa.healthcare.system.service.DoctorService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -86,6 +88,16 @@ public class DoctorServiceImpl implements DoctorService {
 
     @Override
     public List<ResponseDoctorDto> gelAllDoctors(String searchText, int page, int size) {
-        return null;
+        searchText = "%"+searchText+"%";
+        List<Doctor> doctors = doctorRepo.searchDoctors(searchText, PageRequest.of(page, size));
+        List<ResponseDoctorDto> doctorDtos = new ArrayList<>();
+        doctors.forEach(doc -> {
+            doctorDtos.add(
+                    new ResponseDoctorDto(
+                            doc.getId(),doc.getName(),doc.getAddress(),doc.getContact(),doc.getSalary()
+                    )
+            );
+        });
+        return doctorDtos;
     }
 }

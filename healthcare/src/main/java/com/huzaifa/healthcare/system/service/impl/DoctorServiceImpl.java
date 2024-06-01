@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -39,6 +40,19 @@ public class DoctorServiceImpl implements DoctorService {
 
     @Override
     public ResponseDoctorDto getDoctor(long id) {
+        Optional<Doctor> selectedDoctor = doctorRepo.findById(id);
+        if (selectedDoctor.isEmpty()){
+            throw new RuntimeException("Doctor not found !");
+        }
+        Doctor doc= selectedDoctor.get();
+        return new ResponseDoctorDto(
+            doc.getId(),doc.getName(),doc.getAddress(),doc.getContact(),doc.getSalary()
+        );
+    }
+
+    @Override
+    public List<ResponseDoctorDto> findDocByName(String name) {
+        List<Doctor> allByName = doctorRepo.findAllByName(name);
         return null;
     }
 

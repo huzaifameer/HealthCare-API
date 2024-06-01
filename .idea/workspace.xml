@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97917f88-8dfb-44c6-9e77-f3c71f0f050d" name="Changes" comment="">
+    <list default="true" id="97917f88-8dfb-44c6-9e77-f3c71f0f050d" name="Changes" comment="commit-2">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f1ca57ac314c334956d2ca3875db7a5b2607199" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f1ca57ac314c334956d2ca3875db7a5b2607199" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/dto/response/ResponseDoctorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/dto/response/ResponseDoctorDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/repo/DoctorRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/repo/DoctorRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/service/DoctorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/service/impl/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/service/impl/DoctorServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +53,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/Uni Docs/Year 2/SDGP/Implementation/FluentBridge - SriLanka",
     "node.js.detected.package.eslint": "true",
@@ -91,11 +92,23 @@
       <option name="presentableId" value="Default" />
       <updated>1717182253355</updated>
       <workItem from="1717182261019" duration="11855000" />
-      <workItem from="1717240322189" duration="1260000" />
+      <workItem from="1717240322189" duration="2566000" />
     </task>
+    <task id="LOCAL-00001" summary="commit-2">
+      <created>1717242349317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717242349317</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit-2" />
   </component>
 </project>

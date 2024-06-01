@@ -1,7 +1,14 @@
 
-—
-java:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(â…Û‰
-—
-java:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ªè¼™
-A
-java:S11689"+Return an empty collection instead of null.(¥¹ï
+‡	java:S1120"FDefine and throw a dedicated exception instead of using a generic one.(œ½ç'8½ÏÍı1J$e0b0853e-b241-4902-8d52-0e626bc5d289
+‡	java:S112B"FDefine and throw a dedicated exception instead of using a generic one.(œ½ç'8¾ÏÍı1J$b5dbe03c-a133-434f-b08a-a0937e7afe64
+‡	java:S112L"FDefine and throw a dedicated exception instead of using a generic one.(œ½ç'8¾ÏÍı1J$a5a12746-fd21-4991-964e-f3e1663bdbef
+•
+java:S11920"SDefine a constant instead of duplicating this literal "Doctor not found !" 3 times.(œ½ç'8ÁÏÍı1J$5739a00b-3b96-422a-bd57-aceda521af17
+…
+java:S1854:"=Remove this useless assignment to local variable "allByName".(ª€ÊÌúÿÿÿÿ8×ÏÍı1J$7fc5fcee-f8cb-462b-a313-fa766536ad14
+v
+java:S1481:".Remove this unused "allByName" local variable.(ª€ÊÌúÿÿÿÿ8ÙÏÍı1J$bca718fc-c8b5-4ee6-a90e-0fed2c47bb39
+n
+java:S1168;"+Return an empty collection instead of null.(¥¹ï8ÛÏÍı1J$cb39a9a5-5172-42b0-8c9e-7b329871ee69
+n
+java:S1168Y"+Return an empty collection instead of null.(¥¹ï8àÏÍı1J$30b0d156-a9a5-43a1-9c4a-1b4b1d307533

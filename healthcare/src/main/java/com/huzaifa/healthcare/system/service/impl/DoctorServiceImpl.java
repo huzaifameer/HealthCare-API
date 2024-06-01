@@ -5,6 +5,7 @@ import com.huzaifa.healthcare.system.dto.response.ResponseDoctorDto;
 import com.huzaifa.healthcare.system.entity.Doctor;
 import com.huzaifa.healthcare.system.repo.DoctorRepo;
 import com.huzaifa.healthcare.system.service.DoctorService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+@Slf4j
 @Service
 public class DoctorServiceImpl implements DoctorService {
     private final DoctorRepo doctorRepo;
@@ -36,6 +38,7 @@ public class DoctorServiceImpl implements DoctorService {
         );
 
         doctorRepo.save(doctor);
+        log.info("Doctor "+doctor.getName()+" saved.");
     }
 
     @Override
@@ -58,12 +61,27 @@ public class DoctorServiceImpl implements DoctorService {
 
     @Override
     public void deleteDoctor(long id) {
-
+        Optional<Doctor> selectedDoctor = doctorRepo.findById(id);
+        if (selectedDoctor.isEmpty()){
+            throw new RuntimeException("Doctor not found !");
+        }
+        doctorRepo.deleteById(selectedDoctor.get().getId());
+        log.info("Doctor details deleted.....");
     }
 
     @Override
     public void updateDoctor(long id, RequestDoctorDto doctorDto) {
+        Optional<Doctor> selectedDoctor = doctorRepo.findById(id);
+        if (selectedDoctor.isEmpty()){
+            throw new RuntimeException("Doctor not found !");
+        }
+        Doctor doc = selectedDoctor.get();
+        doc.setName(doctorDto.getName());
+        doc.setAddress(doctorDto.getAddress());
+        doc.setContact(doctorDto.getContact());
+        doc.setSalary(doctorDto.getSalary());
 
+        doctorRepo.save(doc);
     }
 
     @Override

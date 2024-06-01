@@ -2,6 +2,10 @@ package com.huzaifa.healthcare.system.api;
 
 import com.huzaifa.healthcare.system.dto.request.RequestDoctorDto;
 import com.huzaifa.healthcare.system.service.DoctorService;
+import com.huzaifa.healthcare.system.util.StandardResponse;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,13 +18,28 @@ public class DoctorController {
     }
 
     @PostMapping
-    public String createDoctor(@RequestBody RequestDoctorDto doctorDto){
+    public ResponseEntity<StandardResponse> createDoctor(@RequestBody RequestDoctorDto doctorDto){
         doctorService.createDoctor(doctorDto);
-        return "Dr. "+doctorDto.getName()+" saved....";
+        return new ResponseEntity<>(
+                new StandardResponse(
+                        201,
+                        "Doctor saved successfully..!",
+                        doctorDto.getName()
+                ),
+                HttpStatus.CREATED
+        );
+
     }
     @GetMapping("/{id}")
-    public String findDoctor(@PathVariable String id){
-        return id+" ";
+    public ResponseEntity<StandardResponse> findDoctor(@PathVariable long id){
+        return new ResponseEntity<>(
+                new StandardResponse(
+                        200,
+                        "Doctor Data : ",
+                        doctorService.getDoctor(id)
+                ),
+                HttpStatus.OK
+        );
     }
     @PutMapping(params = "id")
     public String updateDoctor(@RequestBody RequestDoctorDto doctorDto, @RequestParam String id){

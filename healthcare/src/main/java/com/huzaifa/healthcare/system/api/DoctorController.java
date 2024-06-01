@@ -66,11 +66,18 @@ public class DoctorController {
         );
     }
     @GetMapping(path = "/list",params = {"searchText","page","size"})
-    public String getAllDoctors(
+    public ResponseEntity<StandardResponse> getAllDoctors(
             @RequestParam String searchText,
             @RequestParam int page,
             @RequestParam int size
     ){
-        return "Doctor List";
+        return new ResponseEntity<>(
+                new StandardResponse(
+                        200,
+                        "Doctor List !",
+                        doctorService.getAllDoctors(searchText,page,size)
+                ),
+                HttpStatus.OK
+        );
     }
 }

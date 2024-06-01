@@ -2,6 +2,7 @@ package com.huzaifa.healthcare.system.service.impl;
 
 import com.huzaifa.healthcare.system.dto.request.RequestDoctorDto;
 import com.huzaifa.healthcare.system.dto.response.ResponseDoctorDto;
+import com.huzaifa.healthcare.system.dto.response.paginated.PaginatedDoctorResponseDto;
 import com.huzaifa.healthcare.system.entity.Doctor;
 import com.huzaifa.healthcare.system.repo.DoctorRepo;
 import com.huzaifa.healthcare.system.service.DoctorService;
@@ -87,9 +88,10 @@ public class DoctorServiceImpl implements DoctorService {
     }
 
     @Override
-    public List<ResponseDoctorDto> gelAllDoctors(String searchText, int page, int size) {
+    public PaginatedDoctorResponseDto getAllDoctors(String searchText, int page, int size) {
         searchText = "%"+searchText+"%";
         List<Doctor> doctors = doctorRepo.searchDoctors(searchText, PageRequest.of(page, size));
+        long doctorCount = doctorRepo.countDoctors(searchText);
         List<ResponseDoctorDto> doctorDtos = new ArrayList<>();
         doctors.forEach(doc -> {
             doctorDtos.add(
@@ -98,6 +100,9 @@ public class DoctorServiceImpl implements DoctorService {
                     )
             );
         });
-        return doctorDtos;
+        return new PaginatedDoctorResponseDto(
+                doctorCount,
+                doctorDtos
+        );
     }
 }

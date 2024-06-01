@@ -1,14 +1,14 @@
 
-‡	java:S1122"FDefine and throw a dedicated exception instead of using a generic one.(œ½ç'8»÷öı1J$60647e45-3ebc-4322-af84-190aaf6fe4f0
-‡	java:S112D"FDefine and throw a dedicated exception instead of using a generic one.(œ½ç'8»÷öı1J$6e8a8f65-452b-4028-b17a-ad7283e079f1
-‡	java:S112N"FDefine and throw a dedicated exception instead of using a generic one.(œ½ç'8»÷öı1J$f804c3ea-63e7-445c-9d33-2a6b7d77a523
+‡	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(œ½ç'8™Î­§ı1J$a76177af-8191-48e1-9691-c70da4fe568e
+‡	java:S112E"FDefine and throw a dedicated exception instead of using a generic one.(œ½ç'8šÎ­§ı1J$ae901011-a876-4a84-8e5d-99733f66d8f6
+‡	java:S112O"FDefine and throw a dedicated exception instead of using a generic one.(œ½ç'8šÎ­§ı1J$251b54e1-e54c-447c-bbd8-4cb9fcdffa14
 •
-java:S11922"SDefine a constant instead of duplicating this literal "Doctor not found !" 3 times.(œ½ç'8¾÷öı1J$cf119a16-1403-42e7-9cc6-5028a9c52320
+java:S11923"SDefine a constant instead of duplicating this literal "Doctor not found !" 3 times.(œ½ç'8œÎ­§ı1J$4dd68b83-3ebd-4a34-aa61-30ef55d1e748
 …
-java:S1854<"=Remove this useless assignment to local variable "allByName".(ª€ÊÌúÿÿÿÿ8Õ÷öı1J$e5cbf3c7-619e-437e-a158-a47bf398ad14
+java:S1854="=Remove this useless assignment to local variable "allByName".(ª€ÊÌúÿÿÿÿ8°Î­§ı1J$cb2b5a6d-6602-47b3-b4cd-7b10d96d5bdb
 v
-java:S1481<".Remove this unused "allByName" local variable.(ª€ÊÌúÿÿÿÿ8×÷öı1J$58ccd6ca-499b-4d5a-872e-c30ce5eb1322
+java:S1481=".Remove this unused "allByName" local variable.(ª€ÊÌúÿÿÿÿ8²Î­§ı1J$d40a326c-6ec8-46a6-999b-af880f851c37
 n
-java:S1168="+Return an empty collection instead of null.(¥¹ï8Ø÷öı1J$7bcac9ce-5fd1-4970-9537-428c3098aafe
+java:S1168>"+Return an empty collection instead of null.(¥¹ï8´Î­§ı1J$a6f96474-b829-42ab-9f5f-ff4227559053
 t
-java:S1602^",Remove useless curly braces around statement(åíÍ„ùÿÿÿÿ8á÷öı1J$cfaa8bb9-f789-4817-9820-2e45d8664e45
+java:S1602`",Remove useless curly braces around statement(åíÍ„ùÿÿÿÿ8»Î­§ı1J$1e9dfd21-bb8c-45f8-a265-6b0f207da171

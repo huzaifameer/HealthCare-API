@@ -42,12 +42,28 @@ public class DoctorController {
         );
     }
     @PutMapping(params = "id")
-    public String updateDoctor(@RequestBody RequestDoctorDto doctorDto, @RequestParam String id){
-        return "Updated : "+doctorDto.toString();
+    public ResponseEntity<StandardResponse> updateDoctor(@RequestBody RequestDoctorDto doctorDto, @RequestParam long id){
+        doctorService.updateDoctor(id, doctorDto);
+        return new ResponseEntity<>(
+                new StandardResponse(
+                        200,
+                        "Updated Doctor Data : ",
+                        doctorService.getDoctor(id)
+                ),
+                HttpStatus.CREATED
+        );
     }
     @DeleteMapping("{id}")
-    public String deleteDoctor(@PathVariable String id){
-        return id+" deleted......";
+    public ResponseEntity<StandardResponse> deleteDoctor(@PathVariable long id){
+        doctorService.deleteDoctor(id);
+        return new ResponseEntity<>(
+                new StandardResponse(
+                        204,
+                        "Doctor Deleted !",
+                        doctorService.getDoctor(id).getName()
+                ),
+                HttpStatus.NO_CONTENT
+        );
     }
     @GetMapping(path = "/list",params = {"searchText","page","size"})
     public String getAllDoctors(

@@ -5,31 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97917f88-8dfb-44c6-9e77-f3c71f0f050d" name="Changes" comment="exception handled">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_5_5_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_processor_1_5_5_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0c4bc635a43ff6a7dab3ce664c4865e2d391e0af" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/179dd5af2f1741fa903e1c15312e9486a839d072" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/191693e31f89bff3be284179ba4cbbdcb3673bf8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c1b924d833b6e52fbc0f9593ace674742b61111" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba5b0501e6f0f278a02ebefebae27649eb780f15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cdb0f794ef00392db912a9801442513af9319117" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/eacb21cf5ee36cb67fe9b4cdf5a0ef72220ce3c1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/c/0c4bc635a43ff6a7dab3ce664c4865e2d391e0af" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/7/179dd5af2f1741fa903e1c15312e9486a839d072" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/9/191693e31f89bff3be284179ba4cbbdcb3673bf8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/c/1c1b924d833b6e52fbc0f9593ace674742b61111" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/a/ba5b0501e6f0f278a02ebefebae27649eb780f15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/d/cdb0f794ef00392db912a9801442513af9319117" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/a/eacb21cf5ee36cb67fe9b4cdf5a0ef72220ce3c1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/util/mapper/DoctorMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f1ca57ac314c334956d2ca3875db7a5b2607199" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f1ca57ac314c334956d2ca3875db7a5b2607199" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_api_0_11_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_impl_0_11_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_6_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_6_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_6_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_6_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/007452b27e49d6e6a255f977fa216e8fe5cb2b81" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1dd10d357bee5eacf397f7fd5b425bf5ca3dd815" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43cf9d12c94d81714e1c4d8beb4381f797b02a7a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/712dafac51c60ec24ef15c9066520e3ab3c05249" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f43c961c3ae816cc270ae98d97bf465f399e1b68" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/0/007452b27e49d6e6a255f977fa216e8fe5cb2b81" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/d/1dd10d357bee5eacf397f7fd5b425bf5ca3dd815" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/1/712dafac51c60ec24ef15c9066520e3ab3c05249" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/4/f43c961c3ae816cc270ae98d97bf465f399e1b68" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/entity/UserRoleHasUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/entity/UserRoleHasUserKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/security/ApplicationSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/f/1f1ca57ac314c334956d2ca3875db7a5b2607199" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/f/1f9c09fa59fcbdbe990116a9509b708883738c17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/3/43cf9d12c94d81714e1c4d8beb4381f797b02a7a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/healthcare/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/healthcare/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/service/impl/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/service/impl/DoctorServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +47,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,6 +86,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;9ff28bfa80b1beaca18e167df071db6e&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -114,6 +120,10 @@
       <updated>1717182253355</updated>
       <workItem from="1717182261019" duration="11855000" />
       <workItem from="1717240322189" duration="14989000" />
+      <workItem from="1717316656383" duration="59000" />
+      <workItem from="1717332493424" duration="4582000" />
+      <workItem from="1717339434266" duration="1810000" />
+      <workItem from="1717341298469" duration="901000" />
     </task>
     <task id="LOCAL-00001" summary="commit-2">
       <created>1717242349317</created>
@@ -164,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717306083124</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="exception handled">
+      <created>1717316701275</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717316701275</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

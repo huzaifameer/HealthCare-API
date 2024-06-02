@@ -1,0 +1,12 @@
+
+z
+java:S1874"9Remove this use of "authorizeRequests"; it is deprecated.(¼´·àÿÿÿÿÿJ$91f1f241-331d-42f5-8a18-ca27655b0820
+_
+java:S1128
+"Remove this duplicated import.(¬²ÚäşÿÿÿÿJ$063019b3-91a5-40a7-b586-076f621c5d1b
+·
+java:S1128"{Remove this unused import 'org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity'.(Ô¦øJ$429b42dc-9759-4b0c-b24f-fdf3a3b3a7e9
+¦
+java:S1128"eRemove this unused import 'org.springframework.security.config.annotation.web.WebSecurityConfigurer'.(µØ…­ıÿÿÿÿJ$a466fb2b-b639-40dc-8d84-3e6fb6f7a45e
+_
+java:S1128"Remove this duplicated import.(ŸÜÑıÿÿÿÿJ$38ba2ec5-e1d1-42f2-945e-dd785acd2c72

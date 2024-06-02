@@ -7,6 +7,7 @@ import com.huzaifa.healthcare.system.entity.Doctor;
 import com.huzaifa.healthcare.system.exceptions.EntryNotFoundException;
 import com.huzaifa.healthcare.system.repo.DoctorRepo;
 import com.huzaifa.healthcare.system.service.DoctorService;
+import com.huzaifa.healthcare.system.util.mapper.DoctorMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -21,10 +22,12 @@ import java.util.UUID;
 @Service
 public class DoctorServiceImpl implements DoctorService {
     private final DoctorRepo doctorRepo;
+    private final DoctorMapper doctorMapper;
 
     @Autowired
-    public DoctorServiceImpl(DoctorRepo doctorRepo) {
+    public DoctorServiceImpl(DoctorRepo doctorRepo, DoctorMapper doctorMapper) {
         this.doctorRepo = doctorRepo;
+        this.doctorMapper = doctorMapper;
     }
 
     @Override
@@ -51,10 +54,11 @@ public class DoctorServiceImpl implements DoctorService {
         if (selectedDoctor.isEmpty()){
             throw new EntryNotFoundException("Doctor not found !");
         }
-        Doctor doc= selectedDoctor.get();
-        return new ResponseDoctorDto(
+        //Doctor doc= selectedDoctor.get();
+        return doctorMapper.toResponseDoctorDto(selectedDoctor.get());
+        /*return new ResponseDoctorDto(
             doc.getId(),doc.getName(),doc.getAddress(),doc.getContact(),doc.getSalary()
-        );
+        );*/
     }
 
     @Override
@@ -93,14 +97,15 @@ public class DoctorServiceImpl implements DoctorService {
         searchText = "%"+searchText+"%";
         List<Doctor> doctors = doctorRepo.searchDoctors(searchText, PageRequest.of(page, size));
         long doctorCount = doctorRepo.countDoctors(searchText);
-        List<ResponseDoctorDto> doctorDtos = new ArrayList<>();
-        doctors.forEach(doc -> {
+        List<ResponseDoctorDto> doctorDtos = doctorMapper.toResponseDoctorDtoList(doctors);
+        /*doctors.forEach(doc -> {
             doctorDtos.add(
+
                     new ResponseDoctorDto(
                             doc.getId(),doc.getName(),doc.getAddress(),doc.getContact(),doc.getSalary()
                     )
             );
-        });
+        });*/
         return new PaginatedDoctorResponseDto(
                 doctorCount,
                 doctorDtos

@@ -15,3 +15,7 @@ v
 Fsrc/main/java/com/huzaifa/healthcare/system/util/StandardResponse.java,b\a\ba5b0501e6f0f278a02ebefebae27649eb780f15
 ’
 bsrc/main/java/com/huzaifa/healthcare/system/dto/response/paginated/PaginatedDoctorResponseDto.java,c\d\cdb0f794ef00392db912a9801442513af9319117
+‚
+Rsrc/main/java/com/huzaifa/healthcare/system/advisers/AppWiderExceptionHandler.java,0\c\0c4bc635a43ff6a7dab3ce664c4865e2d391e0af
+‚
+Rsrc/main/java/com/huzaifa/healthcare/system/exceptions/EntryNotFoundException.java,e\a\eacb21cf5ee36cb67fe9b4cdf5a0ef72220ce3c1

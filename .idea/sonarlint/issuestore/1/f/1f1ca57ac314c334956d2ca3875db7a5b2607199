@@ -1,14 +1,11 @@
 
-‡	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(œ½ç'8™Î­§ı1J$a76177af-8191-48e1-9691-c70da4fe568e
-‡	java:S112E"FDefine and throw a dedicated exception instead of using a generic one.(œ½ç'8šÎ­§ı1J$ae901011-a876-4a84-8e5d-99733f66d8f6
-‡	java:S112O"FDefine and throw a dedicated exception instead of using a generic one.(œ½ç'8šÎ­§ı1J$251b54e1-e54c-447c-bbd8-4cb9fcdffa14
-•
-java:S11923"SDefine a constant instead of duplicating this literal "Doctor not found !" 3 times.(œ½ç'8œÎ­§ı1J$4dd68b83-3ebd-4a34-aa61-30ef55d1e748
+–
+java:S11924"SDefine a constant instead of duplicating this literal "Doctor not found !" 3 times.(ÛÓ¥û8œÎ­§ı1J$037220eb-ad64-4cb6-9973-68d16eee9db6
 …
-java:S1854="=Remove this useless assignment to local variable "allByName".(ª€ÊÌúÿÿÿÿ8°Î­§ı1J$cb2b5a6d-6602-47b3-b4cd-7b10d96d5bdb
+java:S1854>"=Remove this useless assignment to local variable "allByName".(ª€ÊÌúÿÿÿÿ8°Î­§ı1J$0ab37466-a4c2-4843-b514-8f8060f5b604
 v
-java:S1481=".Remove this unused "allByName" local variable.(ª€ÊÌúÿÿÿÿ8²Î­§ı1J$d40a326c-6ec8-46a6-999b-af880f851c37
+java:S1481>".Remove this unused "allByName" local variable.(ª€ÊÌúÿÿÿÿ8²Î­§ı1J$d2f8da79-25ec-4ac4-8809-8a94460eb17a
 n
-java:S1168>"+Return an empty collection instead of null.(¥¹ï8´Î­§ı1J$a6f96474-b829-42ab-9f5f-ff4227559053
+java:S1168?"+Return an empty collection instead of null.(¥¹ï8´Î­§ı1J$b659f4ec-e4c9-4b5f-b3d4-77c5fd137532
 t
-java:S1602`",Remove useless curly braces around statement(åíÍ„ùÿÿÿÿ8»Î­§ı1J$1e9dfd21-bb8c-45f8-a265-6b0f207da171
+java:S1602a",Remove useless curly braces around statement(åíÍ„ùÿÿÿÿ8»Î­§ı1J$a5398aea-3783-416b-bdc1-3983ae02b757

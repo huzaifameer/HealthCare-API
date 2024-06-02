@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97917f88-8dfb-44c6-9e77-f3c71f0f050d" name="Changes" comment="findAll done">
-      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/dto/response/paginated/PaginatedDoctorResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f1ca57ac314c334956d2ca3875db7a5b2607199" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f1ca57ac314c334956d2ca3875db7a5b2607199" afterDir="false" />
+    <list default="true" id="97917f88-8dfb-44c6-9e77-f3c71f0f050d" name="Changes" comment="done-1 phase">
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/advisers/AppWiderExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/exceptions/EntryNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f9c09fa59fcbdbe990116a9509b708883738c17" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f9c09fa59fcbdbe990116a9509b708883738c17" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/repo/DoctorRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/repo/DoctorRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/service/DoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/api/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/api/DoctorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/service/impl/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/service/impl/DoctorServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717182253355</updated>
       <workItem from="1717182261019" duration="11855000" />
-      <workItem from="1717240322189" duration="8431000" />
+      <workItem from="1717240322189" duration="10958000" />
     </task>
     <task id="LOCAL-00001" summary="commit-2">
       <created>1717242349317</created>
@@ -133,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717261933899</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="done-1 phase">
+      <created>1717264333941</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717264333941</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +149,7 @@
     <MESSAGE value="commit-2" />
     <MESSAGE value="update-done" />
     <MESSAGE value="findAll done" />
-    <option name="LAST_COMMIT_MESSAGE" value="findAll done" />
+    <MESSAGE value="done-1 phase" />
+    <option name="LAST_COMMIT_MESSAGE" value="done-1 phase" />
   </component>
 </project>

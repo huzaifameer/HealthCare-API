@@ -4,6 +4,7 @@ import com.huzaifa.healthcare.system.dto.request.RequestDoctorDto;
 import com.huzaifa.healthcare.system.dto.response.ResponseDoctorDto;
 import com.huzaifa.healthcare.system.dto.response.paginated.PaginatedDoctorResponseDto;
 import com.huzaifa.healthcare.system.entity.Doctor;
+import com.huzaifa.healthcare.system.exceptions.EntryNotFoundException;
 import com.huzaifa.healthcare.system.repo.DoctorRepo;
 import com.huzaifa.healthcare.system.service.DoctorService;
 import lombok.extern.slf4j.Slf4j;
@@ -48,7 +49,7 @@ public class DoctorServiceImpl implements DoctorService {
     public ResponseDoctorDto getDoctor(long id) {
         Optional<Doctor> selectedDoctor = doctorRepo.findById(id);
         if (selectedDoctor.isEmpty()){
-            throw new RuntimeException("Doctor not found !");
+            throw new EntryNotFoundException("Doctor not found !");
         }
         Doctor doc= selectedDoctor.get();
         return new ResponseDoctorDto(
@@ -66,7 +67,7 @@ public class DoctorServiceImpl implements DoctorService {
     public void deleteDoctor(long id) {
         Optional<Doctor> selectedDoctor = doctorRepo.findById(id);
         if (selectedDoctor.isEmpty()){
-            throw new RuntimeException("Doctor not found !");
+            throw new EntryNotFoundException("Doctor not found !");
         }
         doctorRepo.deleteById(selectedDoctor.get().getId());
         log.info("Doctor details deleted.....");
@@ -76,7 +77,7 @@ public class DoctorServiceImpl implements DoctorService {
     public void updateDoctor(long id, RequestDoctorDto doctorDto) {
         Optional<Doctor> selectedDoctor = doctorRepo.findById(id);
         if (selectedDoctor.isEmpty()){
-            throw new RuntimeException("Doctor not found !");
+            throw new EntryNotFoundException("Doctor not found !");
         }
         Doctor doc = selectedDoctor.get();
         doc.setName(doctorDto.getName());

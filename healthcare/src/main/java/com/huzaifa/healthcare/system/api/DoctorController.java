@@ -60,7 +60,7 @@ public class DoctorController {
                 new StandardResponse(
                         204,
                         "Doctor Deleted !",
-                        doctorService.getDoctor(id).getName()
+                        "No Data"
                 ),
                 HttpStatus.NO_CONTENT
         );

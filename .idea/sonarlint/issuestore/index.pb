@@ -11,5 +11,11 @@ l
 <src/main/java/com/huzaifa/healthcare/system/entity/User.java,0\0\007452b27e49d6e6a255f977fa216e8fe5cb2b81
 v
 Fsrc/main/java/com/huzaifa/healthcare/system/HealthcareApplication.java,4\3\43cf9d12c94d81714e1c4d8beb4381f797b02a7a
+‚
+Rsrc/main/java/com/huzaifa/healthcare/system/advisers/AppWiderExceptionHandler.java,0\c\0c4bc635a43ff6a7dab3ce664c4865e2d391e0af
+n
+>src/main/java/com/huzaifa/healthcare/system/entity/Doctor.java,0\5\0505185eae610aafa925588564cf074671869f3a
 w
 Gsrc/main/java/com/huzaifa/healthcare/system/entity/UserRoleHasUser.java,c\4\c4b927d484a73f04351cead3b0cef3cd773a7ed6
+u
+Esrc/main/java/com/huzaifa/healthcare/system/api/DoctorController.java,1\f\1f9c09fa59fcbdbe990116a9509b708883738c17

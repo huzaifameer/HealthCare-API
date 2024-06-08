@@ -5,31 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97917f88-8dfb-44c6-9e77-f3c71f0f050d" name="Changes" comment="security-version-issue-solved">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_18_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_32_0_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_2_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_jackson_0_11_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_33_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/007452b27e49d6e6a255f977fa216e8fe5cb2b81" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1dd10d357bee5eacf397f7fd5b425bf5ca3dd815" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43cf9d12c94d81714e1c4d8beb4381f797b02a7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/712dafac51c60ec24ef15c9066520e3ab3c05249" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f43c961c3ae816cc270ae98d97bf465f399e1b68" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/auth/ApplicationUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/security/ApplicationUserPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/security/ApplicationUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/security/PasswordConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f43c961c3ae816cc270ae98d97bf465f399e1b68" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f43c961c3ae816cc270ae98d97bf465f399e1b68" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/0/007452b27e49d6e6a255f977fa216e8fe5cb2b81" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/d/1dd10d357bee5eacf397f7fd5b425bf5ca3dd815" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/3/43cf9d12c94d81714e1c4d8beb4381f797b02a7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/1/712dafac51c60ec24ef15c9066520e3ab3c05249" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/4/f43c961c3ae816cc270ae98d97bf465f399e1b68" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/security/ApplicationSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/security/ApplicationSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +105,7 @@
       <workItem from="1717342236874" duration="612000" />
       <workItem from="1717349292428" duration="18000" />
       <workItem from="1717754045110" duration="1296000" />
-      <workItem from="1717850121214" duration="3199000" />
+      <workItem from="1717850121214" duration="6166000" />
     </task>
     <task id="LOCAL-00001" summary="commit-2">
       <created>1717242349317</created>
@@ -194,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717755331747</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="security-version-issue-solved">
+      <created>1717861854037</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717861854037</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

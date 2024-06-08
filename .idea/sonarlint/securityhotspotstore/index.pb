@@ -15,3 +15,11 @@ z
 Jsrc/main/java/com/huzaifa/healthcare/system/entity/UserRoleHasUserKey.java,7\1\712dafac51c60ec24ef15c9066520e3ab3c05249
 ƒ
 Ssrc/main/java/com/huzaifa/healthcare/system/security/ApplicationSecurityConfig.java,f\4\f43c961c3ae816cc270ae98d97bf465f399e1b68
+x
+Hsrc/main/java/com/huzaifa/healthcare/system/security/PasswordConfig.java,b\d\bd2f74f02b6082e0fa15d3f0b82b8d24506f4c45
+}
+Msrc/main/java/com/huzaifa/healthcare/system/security/ApplicationUserRole.java,3\3\3393e59c040b6a09c9a1da0a1f9683ac8224a0bd
+ƒ
+Ssrc/main/java/com/huzaifa/healthcare/system/security/ApplicationUserPermission.java,1\7\1739c2ba863007ae3ea47705be814206580d24f0
+u
+Esrc/main/java/com/huzaifa/healthcare/system/auth/ApplicationUser.java,f\d\fdcd8ef59bfdd4691a57217a8798576dcf50bf2d

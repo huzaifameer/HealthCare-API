@@ -23,3 +23,9 @@ Msrc/main/java/com/huzaifa/healthcare/system/security/ApplicationUserRole.java,
 Ssrc/main/java/com/huzaifa/healthcare/system/security/ApplicationUserPermission.java,1\7\1739c2ba863007ae3ea47705be814206580d24f0
 u
 Esrc/main/java/com/huzaifa/healthcare/system/auth/ApplicationUser.java,f\d\fdcd8ef59bfdd4691a57217a8798576dcf50bf2d
+j
+:src/main/java/com/huzaifa/healthcare/system/JwtConfig.java,3\f\3f57402961b3849a595745e72b667da8a744cd82
+n
+>src/main/java/com/huzaifa/healthcare/system/jwt/JwtConfig.java,1\b\1bc468e07633a869a1b415eef295a7f4c1f2f333
+q
+Asrc/main/java/com/huzaifa/healthcare/system/jwt/JwtSecretKey.java,0\0\00e5df1de53c82a820cfd77cfdb283219ef3001c

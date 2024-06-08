@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97917f88-8dfb-44c6-9e77-f3c71f0f050d" name="Changes" comment="security-version-issue-solved">
-      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/auth/ApplicationUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/security/ApplicationUserPermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/security/ApplicationUserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/security/PasswordConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f43c961c3ae816cc270ae98d97bf465f399e1b68" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f43c961c3ae816cc270ae98d97bf465f399e1b68" afterDir="false" />
+    <list default="true" id="97917f88-8dfb-44c6-9e77-f3c71f0f050d" name="Changes" comment="security-token-creation">
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/jwt/JwtConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/healthcare/src/main/java/com/huzaifa/healthcare/system/jwt/JwtSecretKey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/healthcare/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/healthcare/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,27 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Spring/QuickStart/QuickStart&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;9ff28bfa80b1beaca18e167df071db6e&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "G:/Spring/QuickStart/QuickStart",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "spring.boot",
+    "spring.configuration.checksum": "9ff28bfa80b1beaca18e167df071db6e",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.huzaifa.healthcare.system.dto.response" />
@@ -105,7 +103,7 @@
       <workItem from="1717342236874" duration="612000" />
       <workItem from="1717349292428" duration="18000" />
       <workItem from="1717754045110" duration="1296000" />
-      <workItem from="1717850121214" duration="6166000" />
+      <workItem from="1717850121214" duration="10194000" />
     </task>
     <task id="LOCAL-00001" summary="commit-2">
       <created>1717242349317</created>
@@ -184,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717861854037</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="security-token-creation">
+      <created>1717866962088</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717866962088</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +203,11 @@
     <MESSAGE value="exception handled" />
     <MESSAGE value="security-version-issue" />
     <MESSAGE value="security-version-issue-solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="security-version-issue-solved" />
+    <MESSAGE value="security-token-creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="security-token-creation" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

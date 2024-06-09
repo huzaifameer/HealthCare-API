@@ -25,3 +25,5 @@ Isrc/main/java/com/huzaifa/healthcare/system/repo/UserRoleHasUserRepo.java,6\3\
 Zsrc/main/java/com/huzaifa/healthcare/system/jwt/UsernamePasswordAuthenticationRequest.java,9\e\9ef9c51c554d97dbe5a3fa5f58f8d8cfa66aa34f
 u
 Esrc/main/java/com/huzaifa/healthcare/system/jwt/JwtTokenVerifier.java,5\6\565a55c155f476bb3727dac409e075d8ff015068
+ƒ
+Ssrc/main/java/com/huzaifa/healthcare/system/security/ApplicationSecurityConfig.java,f\4\f43c961c3ae816cc270ae98d97bf465f399e1b68

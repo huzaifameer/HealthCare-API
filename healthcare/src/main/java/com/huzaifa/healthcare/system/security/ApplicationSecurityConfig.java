@@ -1,13 +1,23 @@
 package com.huzaifa.healthcare.system.security;
 
+import com.huzaifa.healthcare.system.jwt.JwtConfig;
+import com.huzaifa.healthcare.system.jwt.JwtTokenVerifier;
+import com.huzaifa.healthcare.system.jwt.JwtUsernamePasswordAuthenticationFilter;
+import com.huzaifa.healthcare.system.service.impl.ApplicationUserServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.cors.CorsConfiguration;
 
+import javax.crypto.SecretKey;
 import java.util.List;
 
 
@@ -16,6 +26,19 @@ import java.util.List;
 @EnableMethodSecurity
 public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
 
+    private final PasswordEncoder passwordEncoder;
+    private final ApplicationUserServiceImpl applicationUserService;
+    //private final UserService;
+    private final JwtConfig jwtConfig;
+    private final SecretKey secretKey;
+
+    public ApplicationSecurityConfig(PasswordEncoder passwordEncoder, ApplicationUserServiceImpl applicationUserService, JwtConfig jwtConfig, SecretKey secretKey) {
+        this.passwordEncoder = passwordEncoder;
+        this.applicationUserService = applicationUserService;
+        this.jwtConfig = jwtConfig;
+        this.secretKey = secretKey;
+    }
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         CorsConfiguration configuration = new CorsConfiguration();
@@ -23,5 +46,38 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
         configuration.setAllowedOrigins(List.of("*"));
         configuration.setAllowedMethods(List.of("GET","POST","PUT","DELETE"));
         configuration.setExposedHeaders(List.of("Authorization"));
+
+        http.csrf().disable()
+                .cors().configurationSource(request -> configuration)
+                .and()
+                .sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
+                .addFilter(
+                        new JwtUsernamePasswordAuthenticationFilter(authenticationManager(),jwtConfig,secretKey)
+                )
+                .addFilterAfter(new JwtTokenVerifier(jwtConfig,secretKey), JwtUsernamePasswordAuthenticationFilter.class)
+                .authorizeRequests()
+                .antMatchers(
+                        "/api/v1/user/**",
+                        "/api/v1/ambulance/**"
+                ).permitAll()
+                .anyRequest()
+                .authenticated();
+    }
+
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.authenticationProvider(daoAuthenticationManagerBean());
+    }
+
+    @Bean
+    public DaoAuthenticationProvider daoAuthenticationManagerBean() throws Exception {
+        DaoAuthenticationProvider daoAuthenticationProvider =
+                new DaoAuthenticationProvider();
+        daoAuthenticationProvider.setPasswordEncoder(passwordEncoder);
+        daoAuthenticationProvider.setUserDetailsService(applicationUserService);
+        return daoAuthenticationProvider;
+
     }
 }
